@@ -1,0 +1,43 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas: "header header"
+                        "nav content";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightseagreen;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+}
+
+.navigation {
+  grid-area: nav;
+  background-color: lightseagreen;
+}
+
+.navigation-list {
+  list-style: none;
+  background-color: lightseagreen;
+}
+
+.navigation-item a{
+  text-decoration: none;
+}
+
+.content {
+  grid-area: content;
+}
+
+.profile-bg {
+  width: 100%;
+  height: 250px;
+}
